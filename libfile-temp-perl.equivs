@@ -1,0 +1,18 @@
+Section: misc
+Priority: optional
+Standards-Version: 3.8.0
+
+Package: libfile-temp-perl
+Version: 0.18
+Maintainer: Debian-Athena Project <debathena@mit.edu>
+Depends: perl-modules (>= 5.6.1)
+Copyright: ../../meta/common/copyright
+Description: gives a version to the File::Temp in perl-modules
+ This is a quick workaround to LP 295127 and LP 282793 in intrepid.
+ .
+ libpar-perl and svk depend on libfile-temp-perl with specific
+ versions, but in intrepid libfile-temp-perl is only a virtual
+ package, provided by perl-modules, and therefore lacks a version.
+ These two packages are therefore uninstallable.
+ .
+ Both packages are fixed in jaunty.
